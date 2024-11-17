@@ -111,7 +111,8 @@ In this tutorial, we will walk through the steps for setting up Active Directory
    - Open **PowerShell ISE** as an administrator.
    - Paste the following script to create multiple user accounts:
 
-```powershell
+```powershellRun the script to create the user accounts and add them to the _EMPLOYEES OU.
+
  # ----- Edit these Variables for your own Use Case ----- #
 $PASSWORD_FOR_USERS   = "Password1"
 $NUMBER_OF_ACCOUNTS_TO_CREATE = 10000
@@ -158,3 +159,7 @@ while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
                -Enabled $true
     $count++
 }
+
+
+
+
