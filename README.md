@@ -109,54 +109,38 @@ In this tutorial, we will walk through the steps for setting up Active Directory
 
 2. **Create User Accounts Using PowerShell**:
    - Open **PowerShell ISE** as an administrator.
-   - Paste the following script to create multiple user accounts:
+     [Paste the following script to create multiple user accounts](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 
-```powershellRun the script to create the user accounts and add them to the _EMPLOYEES OU.
+---
 
- # ----- Edit these Variables for your own Use Case ----- #
-$PASSWORD_FOR_USERS   = "Password1"
-$NUMBER_OF_ACCOUNTS_TO_CREATE = 10000
-# ------------------------------------------------------ #
+### **2.2 Test Logging into Client-1**
 
-Function generate-random-name() {
-    $consonants = @('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z')
-    $vowels = @('a','e','i','o','u','y')
-    $nameLength = Get-Random -Minimum 3 -Maximum 7
-    $count = 0
-    $name = ""
+1. **Verify User Creation in ADUC**:
+   - Open **Active Directory Users and Computers** (ADUC) on **DC-1**.
+   - Confirm that the newly created users appear in the **_EMPLOYEES** Organizational Unit (OU).
 
-    while ($count -lt $nameLength) {
-        if ($($count % 2) -eq 0) {
-            $name += $consonants[$(Get-Random -Minimum 0 -Maximum $($consonants.Count - 1))]
-        }
-        else {
-            $name += $vowels[$(Get-Random -Minimum 0 -Maximum $($vowels.Count - 1))]
-        }
-        $count++
-    }
+2. **Test Logging into Client-1**:
+   - Attempt to log into **Client-1** using one of the newly created user accounts. For example, use `mydomain.com\john_smith`.
+   - Use the password set in the script (e.g., `Cyberlab123!`) to log in.
 
-    return $name
+---
 
-}
+### **2.3 Finalizing the Lab**
 
-$count = 1
-while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
-    $fisrtName = generate-random-name
-    $lastName = generate-random-name
-    $username = $fisrtName + '.' + $lastName
-    $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
+1. **Stop VMs for Resource Saving**:
+   - After completing the lab, do **not delete the VMs** in Azure.
+   - Instead, go to the **Azure portal** and **stop** both **DC-1** and **Client-1** to save resources.
 
-    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
-    
-    New-AdUser -AccountPassword $password `
-               -GivenName $firstName `
-               -Surname $lastName `
-               -DisplayName $username `
-               -Name $username `
-               -EmployeeID $username `
-               -PasswordNeverExpires $true `
-               -Path "ou=_EMPLOYEES,$(([ADSI]`"").distinguishedName)" `
-               -Enabled $true
-    $count++
-}
+---
 
+## **Conclusion**
+
+In this tutorial, you have:
+- Installed **Active Directory Domain Services** and promoted your server as a **Domain Controller**.
+- Created a **domain admin user** and organized domain users within **Organizational Units (OUs)**.
+- Joined **Client-1** to your domain and configured **Remote Desktop access** for non-administrative users.
+- Created multiple **domain user accounts** using PowerShell and logged into **Client-1** as one of the new users.
+
+---
+
+**End of Lab**
