@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/f9ae21fe-6105-4d95-b4f9-4b681163e69d)
+
+
+
 # **Active Directory Lab Tutorial - Part 1 & Part 2**
 
 In this tutorial, we will walk through the steps for setting up Active Directory, creating domain users, managing permissions, and configuring Remote Desktop access for non-administrative users. This will involve working with **DC-1** (Domain Controller) and **Client-1** virtual machines within an Azure environment.
