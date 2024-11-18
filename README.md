@@ -1,5 +1,4 @@
-<p>![image](https://github.com/user-attachments/assets/f9ae21fe-6105-4d95-b4f9-4b681163e69d)</p>
-
+![image](https://github.com/user-attachments/assets/fe888fe7-ca6b-455e-b30c-1b77188f1e42)
 
 
 # **Active Directory Lab Tutorial - Part 1 & Part 2**
