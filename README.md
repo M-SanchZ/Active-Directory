@@ -1,5 +1,15 @@
 ![image](https://github.com/user-attachments/assets/fe888fe7-ca6b-455e-b30c-1b77188f1e42)
 
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- osTicketing system
+
+<h2>Operating Systems Used </h2>
+
+- Windows 10 Pro (22H2)
+
 
 # **Active Directory Lab Tutorial - Part 1 & Part 2**
 
