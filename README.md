@@ -4,7 +4,7 @@
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- osTicketing system
+
 
 <h2>Operating Systems Used </h2>
 
