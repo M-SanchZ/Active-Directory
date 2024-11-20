@@ -145,9 +145,25 @@ In this tutorial, we will walk through the steps for setting up Active Directory
 4. **Add `jane_admin` to the Domain Admins Group**:  
    - Right-click the **Domain Admins** group and select **Add to Group**.
    - Add `jane_admin` to the group.
+     ![image](https://github.com/user-attachments/assets/4c764f6e-7fbb-4b2b-813e-7937bce051ee)
+     ![image](https://github.com/user-attachments/assets/5e9f153a-ec40-47e2-a000-639b620878b8)
+     ![image](https://github.com/user-attachments/assets/c31a3bc7-38d8-4075-8d81-6e977cbf4624)
+     ![image](https://github.com/user-attachments/assets/f322f1f9-9958-43d8-9cd2-44955e31f3f8)
+     ![image](https://github.com/user-attachments/assets/08dbb8c3-a69f-4156-8171-f151493cc30c)
+     ![image](https://github.com/user-attachments/assets/84dbb532-fd8a-4f23-b463-94c7a6b2e78d)
+     ![image](https://github.com/user-attachments/assets/8c287ca6-9f44-4e5a-8708-061b712f332d)
+     ![image](https://github.com/user-attachments/assets/6866bc37-81d0-4ffd-89f3-b25decc1d463)
+     ![image](https://github.com/user-attachments/assets/2cdf8ea3-7ce7-47f6-aaba-a9e0f97f6c38)
+
+
+
+
+
 
 5. **Log Out and Log In as `jane_admin`**:  
    - Log out from **DC-1** and log back in as `mydomain.com\jane_admin` (use the password `Cyberlab123!`).
+     ![image](https://github.com/user-attachments/assets/3800e0ec-dc92-4331-ac80-fce447668560)
+
 
 ---
 
