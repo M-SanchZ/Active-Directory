@@ -189,15 +189,50 @@ In this tutorial, we will walk through the steps for setting up Active Directory
    - Open **System Properties** > **Computer Name** tab.
    - Click **Change** and set the computer to join the **mydomain.com** domain.
    - After the computer restarts, log in as `mydomain.com\labuser` to verify the domain join.
+     ![image](https://github.com/user-attachments/assets/a8804b0b-73b0-4552-a9e1-356a4a3419a3)
+     ![image](https://github.com/user-attachments/assets/e72ed12e-720e-4b48-aa77-16f9b24c640e)
+     ![image](https://github.com/user-attachments/assets/110d84c6-9649-4aba-bcb9-10c9be15dc42)
+     ![image](https://github.com/user-attachments/assets/f2054a8b-b1e7-45df-a64c-4be8af227d01)
+     ![image](https://github.com/user-attachments/assets/de331239-e3d9-4471-bdff-b3ab034df3cb)
+     ![image](https://github.com/user-attachments/assets/e6beffaf-642d-48fd-b4ed-90f5b37e7448)
+     ![image](https://github.com/user-attachments/assets/7ba75b48-33aa-4ea7-9c89-8b3226b02ccf)
+     ![image](https://github.com/user-attachments/assets/f5decf09-a50b-4fa1-a1a6-d04797b80e72)
+     ![image](https://github.com/user-attachments/assets/77279afb-88cc-42f9-83a8-111e2c387a53)
+     ![image](https://github.com/user-attachments/assets/09ffafce-1d2f-41d9-8825-47aedb1b0da5)
+
+   - mydomain.com is the only domain that could be used, anything other than the domain you've created      will not allow you to add a member to.
+     ![image](https://github.com/user-attachments/assets/ead2a806-96ac-4ba4-a3ed-24baedf6a264)
+
+
+
+     
+     
 
 5. **Verify Client-1 in ADUC**:  
    - Log back into **DC-1** as `jane_admin` and open **Active Directory Users and Computers**.
    - Verify that **Client-1** shows up in the domain.
+     ![image](https://github.com/user-attachments/assets/504c536d-734c-46f0-b0ce-e25572195118)
+     ![image](https://github.com/user-attachments/assets/41706659-a0c6-40f7-803e-1512b7cde8fd)
+     ![image](https://github.com/user-attachments/assets/7f018293-1c60-48fa-84a7-f83e03319ff2)
+     ![image](https://github.com/user-attachments/assets/a51d1211-71e6-41cf-86f6-4263bb256657)
+     ![image](https://github.com/user-attachments/assets/82431367-8496-4826-bc0a-0ceae59e69c1)
+     ![image](https://github.com/user-attachments/assets/d4236896-f180-4de7-a5aa-acd0aa0459b3)
+     ![image](https://github.com/user-attachments/assets/9222dc70-df69-4d37-ab4f-eac013d6abbb)
+     ![image](https://github.com/user-attachments/assets/7f197727-eff7-4e64-a732-06d7ba5e5c8a)
+     ![image](https://github.com/user-attachments/assets/68039373-a870-4537-94a4-5be4a8da6c4f)
+     ![image](https://github.com/user-attachments/assets/695d6381-5a09-4ca1-87f7-ce1389aeae60)
+     ![image](https://github.com/user-attachments/assets/8283f1f4-9e69-410e-a131-d887972c3941)
+
+
+
+
 
 6. **Create an OU for Clients**:  
-   - Right-click on the root domain and select **New > Organizational Unit**.
+   - Right-click on the mydomain and select **New > Organizational Unit**.
    - Name the new OU `_CLIENTS` and click **OK**.
    - Drag **Client-1** into the newly created `_CLIENTS` OU.
+     ![image](https://github.com/user-attachments/assets/38f5f531-8606-40d7-a9d9-30d8163e7309)
+
 
 7. **Shutdown VMs** (Optional):  
    - If you're done for the day and want to save resources, you can stop the VMs in the Azure portal. Do not delete the VMs as they will be used in upcoming labs.
