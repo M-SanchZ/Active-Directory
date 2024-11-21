@@ -170,7 +170,9 @@ In this tutorial, we will walk through the steps for setting up Active Directory
 ### **1.3 Join Client-1 to the Domain**
 
 1. **Set DNS Settings for Client-1**:  
-   In the Azure portal, ensure **Client-1's** DNS settings are configured to the **Private IP** address of the Domain Controller (DC-1). If you did this already, just double check if it is still configured to DC-1's Private IP address.
+   In the Azure portal, ensure **Client-1's** DNS settings are configured to the **Private IP** address of the Domain Controller (DC-1). If you did this already, just double check if it is still configured to DC-1's Private IP address. 
+[**2.2 Set DNS for Client-1**](https://github.com/M-SanchZ/Setup-Domain-Controller-in-Azure)
+
    ![image](https://github.com/user-attachments/assets/d5012274-b32e-4b58-a6c3-684b8d2fcce5)
    ![image](https://github.com/user-attachments/assets/060e0fe4-376f-4124-bb8b-a866ab5f6b38)
    ![image](https://github.com/user-attachments/assets/926eadf4-e797-4799-a964-e9c68de7225b)
