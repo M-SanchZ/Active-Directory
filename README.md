@@ -170,27 +170,34 @@ In this tutorial, we will walk through the steps for setting up Active Directory
 ### **1.3 Join Client-1 to the Domain**
 
 1. **Set DNS Settings for Client-1**:  
-   In the Azure portal, ensure **Client-1's** DNS settings are configured to the **Private IP** address of the Domain Controller (DC-1).
+   In the Azure portal, ensure **Client-1's** DNS settings are configured to the **Private IP** address of the Domain Controller (DC-1). If you did this already, just double check if it is still configured to DC-1's Private IP address.
+   ![image](https://github.com/user-attachments/assets/d5012274-b32e-4b58-a6c3-684b8d2fcce5)
+   ![image](https://github.com/user-attachments/assets/060e0fe4-376f-4124-bb8b-a866ab5f6b38)
+   ![image](https://github.com/user-attachments/assets/926eadf4-e797-4799-a964-e9c68de7225b)
+   ![image](https://github.com/user-attachments/assets/5f1dd867-3288-4d1f-9efc-6bc347dc7c2c)
 
-2. **Restart Client-1**:  
+
+   
+
+3. **Restart Client-1**:  
    Restart **Client-1** to apply the changes (already done).
 
-3. **Login to Client-1 and Join the Domain**:  
+4. **Login to Client-1 and Join the Domain**:  
    - Log into **Client-1** as the original local admin (`labuser`).
    - Open **System Properties** > **Computer Name** tab.
    - Click **Change** and set the computer to join the **mydomain.com** domain.
    - After the computer restarts, log in as `mydomain.com\labuser` to verify the domain join.
 
-4. **Verify Client-1 in ADUC**:  
+5. **Verify Client-1 in ADUC**:  
    - Log back into **DC-1** as `jane_admin` and open **Active Directory Users and Computers**.
    - Verify that **Client-1** shows up in the domain.
 
-5. **Create an OU for Clients**:  
+6. **Create an OU for Clients**:  
    - Right-click on the root domain and select **New > Organizational Unit**.
    - Name the new OU `_CLIENTS` and click **OK**.
    - Drag **Client-1** into the newly created `_CLIENTS` OU.
 
-6. **Shutdown VMs** (Optional):  
+7. **Shutdown VMs** (Optional):  
    - If you're done for the day and want to save resources, you can stop the VMs in the Azure portal. Do not delete the VMs as they will be used in upcoming labs.
 
 ---
