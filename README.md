@@ -251,6 +251,29 @@ In this tutorial, we will walk through the steps for setting up Active Directory
    - Click on **Remote settings** on the left sidebar.
    - Under **Remote Desktop**, select **Allow remote connections to this computer**.
    - In the **Select Users** window, add **Domain Users** to grant access to Remote Desktop.
+     ![image](https://github.com/user-attachments/assets/a359cca1-43b1-42ce-8618-63d44c452850)
+     ![image](https://github.com/user-attachments/assets/49d8c9d4-6208-4301-9246-e5a5663d219b)
+     ![image](https://github.com/user-attachments/assets/e99c25b9-35fe-470d-adcd-cf19a3ec1105)
+     ![image](https://github.com/user-attachments/assets/b9a4177a-65cb-41dd-b31f-c6753221d6c2)
+     ![image](https://github.com/user-attachments/assets/da93cd65-ca97-4746-b111-be161800f2d2)
+     ![image](https://github.com/user-attachments/assets/2d62f623-8330-49b5-8043-ed762c0a801b)
+     ![image](https://github.com/user-attachments/assets/6e9332df-7766-42c2-be08-af123d4abc00)
+     ![image](https://github.com/user-attachments/assets/d7a287f3-29ad-46bf-8266-c85bc9293663)
+     ![image](https://github.com/user-attachments/assets/91c58390-b060-4efc-b82c-330773b696ca)
+     ![image](https://github.com/user-attachments/assets/42d3906e-4fd9-4b0a-b519-a37be2a927f5)
+     ![image](https://github.com/user-attachments/assets/b87e993f-4e3b-4e1f-b50c-6f91843c3255)
+
+
+
+
+
+
+
+
+
+
+
+     
 
 3. <p style="color: yellow;">Log In as a Domain User:  
    You can now log into <strong>Client-1</strong> as a normal domain user. For example, you can log in with any <strong>_EMPLOYEES</strong> account and confirm that Remote Desktop access works.</p>
@@ -265,7 +288,19 @@ In this tutorial, we will walk through the steps for setting up Active Directory
 
 2. **Create User Accounts Using PowerShell**:
    - Open **PowerShell ISE** as an administrator.
+   - Create New script
+   - Save in Desktop: create-users
+   - input script 
      [Paste the following script to create multiple user accounts](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+
+     ![image](https://github.com/user-attachments/assets/4374bcb3-9a16-46fe-ab5b-67b0e18e753a)
+     ![image](https://github.com/user-attachments/assets/6b4b38e0-46f4-484c-841f-1b18729587bd)
+     ![image](https://github.com/user-attachments/assets/19565926-077b-4b16-a2d9-f31283fe1142)
+     ![image](https://github.com/user-attachments/assets/f09dfa5d-4662-44be-a638-c7ee7e85ab4f)
+
+
+
+
 
 ---
 
@@ -274,10 +309,28 @@ In this tutorial, we will walk through the steps for setting up Active Directory
 1. **Verify User Creation in ADUC**:
    - Open **Active Directory Users and Computers** (ADUC) on **DC-1**.
    - Confirm that the newly created users appear in the **_EMPLOYEES** Organizational Unit (OU).
+     ![image](https://github.com/user-attachments/assets/90a0a105-8ec5-4464-b08f-0be60f0f6844)
+     ![image](https://github.com/user-attachments/assets/b4efefe5-5feb-410f-9da8-c487ee32210a)
+
+
 
 2. **Test Logging into Client-1**:
-   - Attempt to log into **Client-1** using one of the newly created user accounts. For example, use `mydomain.com\john_smith`.
-   - Use the password set in the script (e.g., `Cyberlab123!`) to log in.
+   - Attempt to log into **Client-1** using one of the newly created user accounts. For example, use `mydomain.com\cik.fif`.
+   - Use the password set in the script (e.g., `Password1`) to log in.
+   - We can open command Prompt and see that we have a local user logged in.
+   - We can also open the User files and see that we are signed in as a User as well as see the admin name
+   - We do not have ADMIN access because we are a logged in as a client 
+     
+     ![image](https://github.com/user-attachments/assets/f6564f0b-4992-49b2-b606-1a45a9c0ebba)
+     ![image](https://github.com/user-attachments/assets/0ca49578-973f-48c1-b9c8-61a4564c0da5)
+     ![image](https://github.com/user-attachments/assets/d3e10074-c9d9-4b99-963f-adc68a1283ba)
+     ![image](https://github.com/user-attachments/assets/f4269747-1b9d-4694-b04f-ed9ab2e69c81)
+     ![image](https://github.com/user-attachments/assets/6f0fa8c9-36ec-459e-8855-4cd9eb093af2)
+
+
+
+
+
 
 ---
 
