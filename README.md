@@ -252,8 +252,9 @@ In this tutorial, we will walk through the steps for setting up Active Directory
    - Under **Remote Desktop**, select **Allow remote connections to this computer**.
    - In the **Select Users** window, add **Domain Users** to grant access to Remote Desktop.
 
-3. **Log In as a Domain User**:  
-   You can now log into **Client-1** as a normal domain user. For example, you can log in with any **_EMPLOYEES** account and confirm that Remote Desktop access works.
+3. <p style="color: yellow;">Log In as a Domain User:  
+   You can now log into <strong>Client-1</strong> as a normal domain user. For example, you can log in with any <strong>_EMPLOYEES</strong> account and confirm that Remote Desktop access works.</p>
+
 
 ---
 
